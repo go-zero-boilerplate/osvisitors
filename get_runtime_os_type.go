@@ -10,7 +10,7 @@ func GetRuntimeOsType() (OsType, error) {
 	for _, os := range AllList {
 		visitor := &GoOSNameVisitor{}
 		os.Accept(visitor)
-		if strings.EqualFold(runtime.GOOS, visitor.name) {
+		if strings.EqualFold(runtime.GOOS, visitor.Name) {
 			return os, nil
 		}
 	}

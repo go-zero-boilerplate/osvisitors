@@ -1,7 +1,7 @@
 package osvisitors
 
-type GoOSNameVisitor struct{ name string }
+type GoOSNameVisitor struct{ Name string }
 
-func (g *GoOSNameVisitor) VisitWindows() { g.name = "windows" }
-func (g *GoOSNameVisitor) VisitLinux()   { g.name = "linux" }
-func (g *GoOSNameVisitor) VisitDarwin()  { g.name = "darwin" }
+func (g *GoOSNameVisitor) VisitWindows() { g.Name = "windows" }
+func (g *GoOSNameVisitor) VisitLinux()   { g.Name = "linux" }
+func (g *GoOSNameVisitor) VisitDarwin()  { g.Name = "darwin" }
