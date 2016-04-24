@@ -4,6 +4,12 @@ var (
 	WindowsOs OsType = &windows{}
 	LinuxOs   OsType = &linux{}
 	DarwinOs  OsType = &darwin{}
+
+	AllList []OsType = []OsType{
+		WindowsOs,
+		LinuxOs,
+		DarwinOs,
+	}
 )
 
 type OsType interface {
